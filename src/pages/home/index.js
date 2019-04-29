@@ -8,17 +8,17 @@ const Home = props => {
 		<div className="home">
 			<div className="d-flex justify-content-center flex-column">
 				<div className="title">Find the best reviewer for your restaurant!</div>
-				<div className="d-flex form flex-column">
-					<div className="topic">
-						Restaurant Type
+				<div className="d-flex form flex-column p-5 align-items-center">
+					<div className="d-flex mb-3 w-75 justify-content-between">
+						<div className="topic">Restaurant Type</div>
 						<SelectBox />
 					</div>
-					<div className="topic">
-						Location
+					<div className="d-flex mb-3 w-75 justify-content-between">
+						<div className="topic">Location</div>
 						<SelectBox />
 					</div>
-					<div className="topic">
-						User Age Range
+					<div className="d-flex mb-3 w-75 justify-content-between">
+						<div className="topic">User Age Range</div>
 						<SelectBox />
 					</div>
 				</div>

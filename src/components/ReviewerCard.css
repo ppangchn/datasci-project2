@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.reviewer-card-container {
+    font-family: 'Roboto';
+    font-size: 18;
+    color: #0070A8;
+}
+
+.bold-font {
+    font-weight: 800;
+}

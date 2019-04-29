@@ -8,27 +8,22 @@ import './ReviewerCard.css';
 class ReviewerCard extends Component {
     constructor(props){
         super();
+        // this.state = {
+        //     gender : this.props.gender,
+        //     email : this.props.email,
+        //     activityScore : this.props.activityScore,
+        //     lastActivityTime : this.props.lastActivityTime,
+        //     totalNumberOfSponsored : this.props.totalNumberOfSponsored,
+        //     numberOfFollowers : this.props.numberOfFollowers
+        // }
         this.state = {
-            gender : 'this.props.gender',
-            email : 'this.props.email',
-            activityScore : 'this.props.activityScore',
-            lastActivityTime : 'this.props.lastActivityTime',
-            totalNumberOfSponsored : 'this.props.totalNumberOfSponsored',
-            numberOfFollowers : 'this.props.numberOfFollowers'
-        }
-        this.mockdata();
-        console.log('ddddd')
-    }
-
-    mockdata = () => {
-        this.setState({
             gender : '1',
             email : 'kwaiiiii@gmail.com',
             activityScore : 55,
             lastActivityTime : '19.05 11 March 2019',
             totalNumberOfSponsored : 100,
             numberOfFollowers : 9999
-        });
+        };
     }
 
     handleDisplayImage = () => {

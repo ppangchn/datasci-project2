@@ -6,4 +6,12 @@
 
 .title {
     font-size: 30px;
+    color: #0070A8;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 18px;
+    color: rgb(238, 112, 62);
+    font-weight: bold;
 }

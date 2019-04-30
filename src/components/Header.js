@@ -10,7 +10,7 @@ const Container = styled.div`
 const Header = props => {
 	return (
 		<Container>
-			<div class="d-flex justify-content-left ml-5">
+			<div className="d-flex justify-content-left ml-5">
 				<img
 					src="icon.png"
 					className="icon"

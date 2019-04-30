@@ -3,7 +3,8 @@
 .reviewer-card-container {
     font-family: 'Roboto';
     font-size: 18;
-    color: #0070A8;
+    color: #0070A8 !important;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .bold-font {

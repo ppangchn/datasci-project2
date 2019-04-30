@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './reviewer.css';
 import ReviewerCard from '../../components/ReviewerCard';
 import axios from 'axios';
+import $ from 'jquery';
 
 const Reviewer = () => {
 	const [listReviwer, setListReviewer] = useState([{},{}, {},{},{},{},{}, {},{},{}]);
 	useEffect(() => {
-		axios.post('http://localhost:3000/user/id',{
-			id:[22,211,323,41,52,1,2,3,4,5]
+		$.post(`http://192.168.43.24:5000/predict`, {userId: localStorage.getItem('userId')}).then(
+			(res) => {
+			axios.post('http://localhost:3000/user/id',{
+			id:res
 		}).then((res) => {
 			const {data} = res
 			var result = Object.keys(data).map(function(key) {
@@ -15,7 +18,23 @@ const Reviewer = () => {
 			  });
 			  console.log(result)
 			setListReviewer(result)
-		})		
+		})
+		}
+		)
+		// axios.post(`http://172.20.10.14:5000/predict?userId=${localStorage.getItem('userId')}`)
+		// .then((res) => {
+		// 	axios.post('http://localhost:3000/user/id',{
+		// 	id:res.data
+		// }).then((res) => {
+		// 	const {data} = res
+		// 	var result = Object.keys(data).map(function(key) {
+		// 		return  data[key];
+		// 	  });
+		// 	  console.log(result)
+		// 	setListReviewer(result)
+		// })
+		// })
+				
 	},[]);
 
 	return (

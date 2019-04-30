@@ -9,3 +9,7 @@
 .bold-font {
     font-weight: 800;
 }
+
+.mini-card {
+    border: 5px solid #0070A8;
+}

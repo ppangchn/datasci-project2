@@ -34,7 +34,7 @@ class ReviewerCard extends Component {
 	componentWillReceiveProps(props){
 		console.log('prop')
 		console.log(props)
-		const { gender,id,email_2 ,activity_score,last_activity_time,number_of_followers,total_rating,total_number_of_reviews,average_rating} = props.data
+		const {total_number_of_sponsored_reviews, gender,id,email_2 ,activity_score,last_activity_time,number_of_followers,total_rating,total_number_of_reviews,average_rating} = props.data
 		console.log(gender, id,email_2 ,activity_score,last_activity_time,number_of_followers,total_rating,total_number_of_reviews,average_rating)
 		this.setState({
 			gender:gender,
@@ -43,6 +43,7 @@ class ReviewerCard extends Component {
 			lastActivityTime:last_activity_time,
 			numberOfFollowers:number_of_followers,
 			TotalRating:total_rating,
+			totalNumberOfSponsored:total_number_of_sponsored_reviews,
 			total_number_of_review:total_number_of_reviews,
 			averageRating:average_rating
 		})

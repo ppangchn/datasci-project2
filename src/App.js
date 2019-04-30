@@ -13,7 +13,6 @@ function App() {
     <Header />
     <Route exact path="/" component={Home}/>
     <Route exact path="/reviewer" component={Reviewer}/>
-    <Route path='/card' component={ReviewerCard}/>
     </div>
   );
 }
